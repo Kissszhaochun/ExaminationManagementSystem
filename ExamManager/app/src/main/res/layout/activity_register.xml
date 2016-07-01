@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_normal"
+    android:orientation="vertical">
+
+    <com.example.spring.exammanager.ui.widget.CommonTitile
+        android:id="@+id/title_registe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.example.spring.exammanager.ui.widget.CommonTitile>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+
+        <EditText
+            android:id="@+id/edit_regist_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edittext_default"
+            android:hint="用户名"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/edit_regist_user_password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edittext_default"
+            android:hint="密码"
+            android:inputType="textPassword"
+            android:singleLine="true" />
+
+        <EditText
+            android:id="@+id/edit_redo_password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edittext_default"
+            android:hint="确认密码"
+            android:inputType="textPassword"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@+id/tv_choose_user_type"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edittext_default"
+            android:gravity="center_vertical"
+            android:text="选择用户类型"
+            android:textColor="#868686"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/edit_teacher_credentials"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edittext_default"
+            android:hint="教师资格证件号码"
+            android:inputType="number"
+            android:singleLine="true"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/edit_student_number"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edittext_default"
+            android:hint="学号"
+            android:inputType="number"
+            android:singleLine="true"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/tv_registed_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/login_btn"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="注册用户"
+            android:textColor="@color/white"
+            android:textSize="19sp" />
+    </LinearLayout>
+</LinearLayout>

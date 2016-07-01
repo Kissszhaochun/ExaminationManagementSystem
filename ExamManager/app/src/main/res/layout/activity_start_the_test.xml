@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_normal"
+    android:orientation="vertical"
+    tools:context="com.example.spring.exammanager.core.activity.StartTheTestActivity">
+
+    <com.example.spring.exammanager.ui.widget.CommonTitile
+        android:id="@+id/title_start_the_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></com.example.spring.exammanager.ui.widget.CommonTitile>
+
+    <TextView
+        android:id="@+id/tv_question_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:paddingLeft="10sp"
+        android:paddingRight="10sp"
+        android:text="1.一个栈的输入序列为1 2 3 4 5，则下列序列中不可能是栈得输出序列的是（ ）  "
+        android:textColor="@color/text_black"
+        android:textSize="19sp" />
+
+
+    <RadioGroup
+        android:id="@+id/rg_option"
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+
+        <RadioButton
+            android:id="@+id/rb_question_a"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="A. 5 4 1 3 2"
+            android:textColor="@color/text_black"></RadioButton>
+
+        <RadioButton
+            android:id="@+id/rb_question_b"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="B. 5 4 1 3 2"
+            android:textColor="@color/text_black"></RadioButton>
+
+        <RadioButton
+            android:id="@+id/rb_question_c"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="C. 5 4 1 3 2"
+            android:textColor="@color/text_black"></RadioButton>
+
+        <RadioButton
+            android:id="@+id/rb_question_d"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="D. 5 4 1 3 2"
+            android:textColor="@color/text_black"></RadioButton>
+    </RadioGroup>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_next_question"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/btn_commont_bg"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="下一题"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

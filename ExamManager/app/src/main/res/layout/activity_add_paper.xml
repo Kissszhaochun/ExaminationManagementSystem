@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_normal"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <com.example.spring.exammanager.ui.widget.CommonTitile
+        android:id="@+id/title_add_pager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></com.example.spring.exammanager.ui.widget.CommonTitile>
+
+    <EditText
+        android:id="@+id/edit_pager_outline"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_default"
+        android:hint="试卷大纲" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/ll_">
+
+            <TextView
+                android:id="@android:id/empty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="200dp"
+                android:text="暂无试题（请添加试题）"
+                android:textColor="@color/font_value"
+                android:textSize="15sp" />
+
+            <ListView
+                android:id="@+id/lv_questions"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/title_testmanager_pager"
+                android:divider="@color/divider_color"
+                android:dividerHeight="0.5dp"></ListView>
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_save_all"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/btn_commont_bg"
+                android:gravity="center"
+                android:text="提交全部"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="@color/background_normal" />
+
+            <TextView
+                android:id="@+id/tv_add_questions"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/btn_commont_bg"
+                android:gravity="center"
+                android:text="添加试题"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

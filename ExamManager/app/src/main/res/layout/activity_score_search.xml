@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_normal"
+    android:orientation="vertical"
+    tools:context="com.example.spring.exammanager.core.activity.ScoreSearchActivity">
+
+    <com.example.spring.exammanager.ui.widget.CommonTitile
+        android:id="@+id/title_score_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></com.example.spring.exammanager.ui.widget.CommonTitile>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.example.spring.exammanager.ui.widget.ElasticityListView
+            android:id="@+id/lv_score_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@color/transparent"
+            android:divider="@color/divider_color"
+            android:dividerHeight="0.5dp"
+            android:layoutAnimation="@anim/layout_anim"></com.example.spring.exammanager.ui.widget.ElasticityListView>
+
+        <TextView
+            android:id="@android:id/empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="200dp"
+            android:text="暂无成绩（及时测试自己,才知道自己的水平）"
+            android:textColor="@color/font_value"
+            android:textSize="15sp" />
+    </FrameLayout>
+
+</LinearLayout>

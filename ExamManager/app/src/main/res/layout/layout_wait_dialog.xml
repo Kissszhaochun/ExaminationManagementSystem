@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/wait_dialog_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:paddingTop="10dp">
+
+    <com.tt.whorlviewlibrary.WhorlView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/whorl"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:WhorlView_BigWhorlColor="@color/material_green"
+        app:WhorlView_CircleSpeed="270"
+        app:WhorlView_MiddleWhorlColor="@color/material_yellow"
+        app:WhorlView_Parallax="fast"
+        app:WhorlView_SmallWhorlColor="@color/material_red"
+        app:WhorlView_StrokeWidth="6"
+        app:WhorlView_SweepAngle="180"></com.tt.whorlviewlibrary.WhorlView>
+
+    <TextView
+        android:id="@+id/tv_load_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:text="请稍候..."
+        android:textColor="@color/text_black"
+        android:textSize="15sp" />
+
+</LinearLayout>

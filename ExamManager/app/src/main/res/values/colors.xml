@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="main_">#075581</color>
+    <color name="main_press">#034473</color>
+    <color name="white">#ffffff</color>
+    <color name="popup_bg">#f7e1e1</color>
+    <color name="background_normal">#fffffbf0</color>
+    <color name="background_normal_pressed">#f5f2e7</color>
+    <color name="black">#000000</color>
+    <color name="text_black">#353535</color>
+    <color name="divider_color">#c8c7cc</color>
+    <color name="welcome_backgroud">#ff117aa7</color>
+    <color name="font_undercard">#52ae3d</color>
+    <color name="link_color">#ff4abad7</color>
+    <color name="index_text_color">#037a94</color>
+    <color name="text_color">#ff434343</color>
+    <color name="blue">#ff0f81d9</color>
+    <color name="blue_pressed">#0675cc</color>
+    <color name="transparent">#00000000</color>
+    <color name="font_value">#ff888271</color>
+    <color name="orange">#ba8409</color>
+    <color name="round_corner_filter_green">#ff66ccff</color>
+    <color name="text_color_blue">#ff6699cc</color>
+    <color name="score_red">#ffff4444</color>
+    <color name="common_top_bar_blue">#4ebcd3</color>
+    <color name="material_yellow">#ffea00</color>
+    <color name="text_black_464646">#464646</color>
+    <color name="arc_grey">#E7EBEC</color>
+    <color name="background_blue">#1bbd8f</color>
+</resources>

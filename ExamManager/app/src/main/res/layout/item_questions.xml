@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/question" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:id="@+id/tv_question_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxEms="18"
+                android:singleLine="true"
+                android:text="JAVA是如何让鑫学会的？"
+                android:textColor="@color/text_color"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_correct_and_score"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="正确答案:B  分数:20"
+                android:textColor="@color/font_value"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

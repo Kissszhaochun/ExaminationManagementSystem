@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_normal"
+    android:orientation="vertical"
+    tools:context="com.example.spring.exammanager.core.activity.AddQuestionsActivity">
+
+    <com.example.spring.exammanager.ui.widget.CommonTitile
+        android:id="@+id/title_add_questions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></com.example.spring.exammanager.ui.widget.CommonTitile>
+
+    <EditText
+        android:id="@+id/edit_question_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edittext_default"
+        android:hint="题目：绿色为正确答案,请单击选项确认正确答案"
+        android:textSize="17sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <LinearLayout
+            android:id="@+id/ll_questionA"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/border_blue"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_questionA"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:background="@color/blue"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="A"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edit_question_a"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="9"
+                android:hint="请在这里输入答案"
+                android:paddingLeft="5dp"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_questionB"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border_blue"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_questionB"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:background="@color/blue"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="B"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edit_question_b"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="9"
+                android:hint="请在这里输入答案"
+                android:paddingLeft="5dp"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_questionC"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border_blue"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_questionC"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:background="@color/blue"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="C"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edit_question_c"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="9"
+                android:hint="请在这里输入答案"
+                android:paddingLeft="5dp"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_questionD"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border_blue"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_questionD"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:background="@color/blue"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="D"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edit_question_d"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="9"
+                android:hint="请在这里输入答案"
+                android:paddingLeft="5dp"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border_blue"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:background="@color/blue"
+                android:gravity="center"
+                android:text="分数"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edit_score"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="9"
+                android:hint="输入分数"
+                android:inputType="number"
+                android:paddingLeft="5dp"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edit_correct_and_analysis"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/border_blue"
+        android:gravity="start"
+        android:hint="正确答案及解析正确格式如：（D,前面是正确选项与解析逗号隔开。）"
+        android:padding="5dp"
+        android:textSize="15sp" />
+
+
+    <Button
+        android:id="@+id/btn_save_question"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/btn_commont_bg"
+        android:text="保存试题"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+</LinearLayout>
